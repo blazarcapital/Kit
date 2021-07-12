@@ -3,18 +3,10 @@ const cliProgress = require('cli-progress')
 
 const { log } = require('./utils')
 const { clear, icon, newLines } = require('./atoms')
-const {
-  logo,
-  box,
-  truncatingBox,
-  title,
-  subtitle,
-  spinner
-} = require('./molecules')
+const { box, truncatingBox, title, subtitle, spinner } = require('./molecules')
 
 function splash({ title: bar, subtitle: foo, version = {} }) {
   clear()
-  logo()
   box(
     title(`${icon('pointerSmall')} ${bar}`),
     subtitle(`${icon('pointerSmall')} ${foo}`),

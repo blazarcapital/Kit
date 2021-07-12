@@ -46,7 +46,7 @@ function createTokens(path) {
 }
 
 function getBase(path, file) {
-  if (/templates\//.test(path) || /[.]template[.]liquid/.test(file)) {
+  if (/templates\//.test(path)) {
     if (/templates\/customers/.test(path)) {
       base = 'templates/customers'
     } else {

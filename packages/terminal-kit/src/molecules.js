@@ -5,10 +5,6 @@ const termSize = require('term-size')
 const { log } = require('./utils')
 const { newLines, time } = require('./atoms')
 
-function logo() {
-  termSize().columns > 55 && log(require(`${__dirname}/../src/logo`))
-}
-
 /**
  * This is the first box style, that does not truncate
  * specific lines that it renders. This is what
@@ -86,7 +82,6 @@ function color(color, string) {
 }
 
 module.exports = {
-  logo,
   box,
   truncatingBox,
   title,

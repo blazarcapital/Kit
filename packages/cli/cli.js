@@ -55,7 +55,7 @@ new Promise(async (resolve) => {
     program.quick
       ? true
       : splash({
-          title: 'Half Helix Kit',
+          title: 'Blazar Capital Kit',
           subtitle: 'The developer toolbelt',
           version: getVersionDetails(details, `${pkg.version}`)
         })
@@ -64,7 +64,7 @@ new Promise(async (resolve) => {
     program.quick
       ? true
       : splash({
-          title: 'Half Helix Kit',
+          title: 'Blazar Capital Kit',
           subtitle: 'The developer toolbelt'
         })
     resolve()
